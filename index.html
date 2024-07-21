@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <p class="yourBal">₹ 0</p>
+        <p>Your Balance</p>
+        <h2>Transactions History</h2>
+        <hr>
+        <div class="transactions">
+            <!-- <div class="transaction">
+                <div class="transaction" >
+                    <div class="show">
+                        <div class="left">
+                        <p id="text">Enter Description</p>
+                        <p id="amount">₹ Enter Amount </p>
+                    </div>
+                        <p style="background-color:green" id="debitOrCredit">D</p>
+                    </div>
+                    <div id="after" class="after hide">
+                        <span id="editSym" class="material-symbols-outlined">edit</span>
+                        <span id="delSym" class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>        
+    </div>
+
+
+    <div class="control">    
+    <h2>Add Transactions</h2>
+      <form id="form1">
+        <div class="texts">
+          <div>
+            <label for="text1">Text</label>
+            <input type="text" id="text1" placeholder="Enter description" name="text1" required>                    
+          </div>
+                    
+          <div>
+            <label for="text2">Amount</label>
+            <input type="number" id="text2" placeholder="Enter Amount" name="text2" required>
+          </div>
+        </div>
+                
+        <div class="btns">
+            <button id="btnEar" type="submit">
+                <p id="totalEar">₹ 0</p>
+                <p >Earnings</p>
+            </button>
+            <button id="btnExp" type="submit">
+                <p id="totalExp">₹ 0</p>
+                <p>Expense</p>
+            </button>
+        </div>
+      </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: auto;
+    width: 450px;
+    height: 70vh;
+    background-color: #302e2e;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+.container h1{
+    margin: 20px 0;
+}
+.container> p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.container h2{
+    text-align: start;
+    margin: 3   0px 0 0 0;
+    font-size: 20px;
+}
+.transactions{
+    overflow-y: scroll;
+    overflow: auto;
+    scrollbar-color: red;
+    scrollbar-width: thin;
+    height: 40vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.transaction{
+    background-color: #ffffff;
+    color: black;
+    padding-left: 10px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+#after{
+    text-align: start;
+    /* padding: 5px; */
+}
+.hide{
+    display: none;
+}
+#debitOrCredit{
+    padding: 12px 15px;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+.control{
+    margin: auto;
+    width: 450px;
+    height: 30vh;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+}
+.control div div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.texts{
+    display: flex;
+    justify-content: space-between;
+}
+.control h2{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#text1,#text2{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 8px;
+}
+.btns{
+    display: flex;
+    margin-top: 10px;
+}
+#btnEar{
+    width: 250px;
+    height: 45px;
+    background-color: green;
+    color: #ffffff;
+    border: none;
+}
+#btnExp{
+    width: 250px;
+    height: 45px;
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+#btnEar p,#btnExp p{
+    font-size: 15px;
+}
+
+@media (max-width:500px) {
+    
+    .container{
+        margin: auto;
+        width: 100%;
+    }
+    .control{
+        width: 100%;
+    }
+    #text1,#text2{
+        width: 44vw;
+    }
+}
